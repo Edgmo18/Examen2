@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int datos[5] = {8, 3, 15, 6, 10};
+	int i;
+	
+	for (i = 0; i<5; i++){
+		cout << "Datos[" << i <<"] =" << datos[i] << ", direccion = " << static_cast<const void *>(&datos[i]) <<endl;
+	}
+	return 0;
+}
